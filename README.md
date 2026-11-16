@@ -1,7 +1,7 @@
 # litemall 商城 Web UI 自动化测试项目
 
 基于 **Python + Selenium + Pytest + Allure** 的 Web UI 自动化测试框架，被测对象为 litemall 商城前台
-（`http://192.168.2.146:6255`，Vue + Vant 的移动端 H5 商城）。
+（`http://<your-litemall-host>:6255`，Vue + Vant 的移动端 H5 商城）。
 
 ## 一、目录结构
 
@@ -53,6 +53,10 @@ litemall_ui_autotest/
 ## 二、环境准备
 
 ```bash
+# 0. 复制本地配置模板（首次运行，填入被测环境地址与测试账号）
+copy config\config.example.yaml config\config.yaml
+copy data\login_data.example.yaml data\login_data.yaml
+
 # 1. 创建虚拟环境并安装依赖
 python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt

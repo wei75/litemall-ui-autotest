@@ -15,11 +15,16 @@ __pycache__/
 .pytest_cache/
 .cache/
 
+# ---------------- 本地配置（含环境地址与测试账号） ----------------
+config/config.yaml
+data/login_data.yaml
+
 # ---------------- 运行产物 ----------------
 logs/
 screenshots/
 reports/allure-results/
 reports/allure-report/
+reports/environment.properties
 *.log
 
 # ---------------- 第三方工具依赖（allure 命令行） ----------------

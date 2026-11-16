@@ -1,0 +1,13 @@
+# 登录模块测试数据模板
+# 用法：复制为 data/login_data.yaml 后填入被测环境的真实账号
+# data/login_data.yaml 已加入 .gitignore，不会被提交到仓库
+
+- case: 正确账号密码登录成功
+  username: "your_username"
+  password: "your_password"
+  expect_success: true
+
+- case: 错误密码登录失败
+  username: "your_username"
+  password: "wrong_password"
+  expect_success: false

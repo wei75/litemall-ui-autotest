@@ -1,9 +1,10 @@
-# 全局配置文件
-# 被测环境、浏览器参数、超时时间、测试账号统一在这里维护
+# 全局配置模板
+# 用法：复制为 config/config.yaml 后按实际环境修改
+# config/config.yaml 已加入 .gitignore，不会被提交到仓库
 
 env:
   # litemall 前台地址（Vue 项目使用 hash 路由，路径形如 /#/login）
-  base_url: "http://192.168.2.146:6255"
+  base_url: "http://127.0.0.1:6255"
 
 browser:
   name: chrome
@@ -18,11 +19,11 @@ timeout:
   poll: 0.5
 
 account:
-  # litemall 演示环境内置的测试账号
-  username: user123
-  password: user123
+  # 被测环境的测试账号
+  username: "your_username"
+  password: "your_password"
   # 错误密码，用于登录失败用例
-  wrong_password: "wrong_pwd_123"
+  wrong_password: "wrong_password"
 
 paths:
   logs: logs
