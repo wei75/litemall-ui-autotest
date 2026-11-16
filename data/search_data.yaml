@@ -1,0 +1,10 @@
+# 搜索模块测试数据
+# 关键词根据被测环境实际商品数据选取
+- case: 输入存在商品的名称片段，能搜到结果
+  keyword: "衣"
+  expect_empty: false
+
+- case: 输入不存在的商品关键词，展示空结果提示
+  keyword: "手机"
+  expect_empty: true
+  empty_text: "抱歉,没有找到符合条件商品"

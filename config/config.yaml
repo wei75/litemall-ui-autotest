@@ -1,0 +1,30 @@
+# 全局配置文件
+# 被测环境、浏览器参数、超时时间、测试账号统一在这里维护
+
+env:
+  # litemall 前台地址（Vue 项目使用 hash 路由，路径形如 /#/login）
+  base_url: "http://192.168.2.146:6255"
+
+browser:
+  name: chrome
+  # 是否无头运行，CI 环境改为 true
+  headless: false
+  window_size: "1440,900"
+
+timeout:
+  # 显式等待的默认超时时间（秒）
+  default: 20
+  # 轮询间隔（秒）
+  poll: 0.5
+
+account:
+  # litemall 演示环境内置的测试账号
+  username: user123
+  password: user123
+  # 错误密码，用于登录失败用例
+  wrong_password: "wrong_pwd_123"
+
+paths:
+  logs: logs
+  screenshots: screenshots
+  reports: reports
